@@ -1,5 +1,7 @@
 # Dark Jokes API Documentation
 
+![cover image]([http://url/to/img.png](https://github.com/qa-p1/Dark-Jokes-API/blob/main/Dark%20Jokes%20API.png?raw=true))
+
 ## Table of Contents
 
 - [Introduction](#introduction)
