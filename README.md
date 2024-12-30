@@ -13,7 +13,6 @@
   - [/submit-joke](#submit-joke)
   - [/playground](#playground)
 - [Contributing](#contributing)
-- [Rate Limit](#rate-limit)
 
 ## Introduction
 
