@@ -10,27 +10,30 @@
   - [/random](#random)
   - [/joke-by-id](#joke-by-id)
   - [/search](#search)
+  - [/submit-joke](#submit-joke)
+  - [/playground](#playground)
 - [Contributing](#contributing)
+- [Rate Limit](#rate-limit)
 
 ## Introduction
 
-Welcome to the Joke API! This API provides a collection of jokes in JSON format. You can access the jokes through various endpoints, which are described below.
-These are just not meant to hurt anyone's emotion!!
+Welcome to the Joke API! This API provides a collection of dark jokes. You can access the jokes through various endpoints, which are described below. Rate limit **100 per hour**, These are just not meant to hurt anyone's emotion!!
+
 ## API Endpoints
 
 ### /
 
-Just the root page nothing special just the app intro.
+Root Page of the Dark Jokes API
 
 **Response:**
 
 ```json
 {
-  "message": "Welcome to the Dark Jokes API. This api is created by none other than me. Visit our Github page for more Documentation: https://github.com/your-username/joke-api"
+  "message": "Welcome to the Dark Jokes API. This api is created by none other than me. Visit our Github page for more Documentation: https://github.com/qa-p1/Dark-Jokes-API"
 }
 ```
 
-### /random
+## /random
 
 This endpoint returns a random selection of jokes. The 'limit' parameter specifies the maximum number of jokes to return. Maximum limit is 20.
 
@@ -57,10 +60,9 @@ GET /random?limit=3
     "joke": "Any joke can be funny when delivered right. Except abortion jokes, cause there's no delivery. "
   }
 ]
-
 ```
 
-### /joke-by-id
+## /joke-by-id
 
 This endpoint returns a joke by its ID. If the ID is less than or equal to 0, an error message is returned. If the joke with the specified ID does not exist, an error message is returned.
 
@@ -81,7 +83,7 @@ GET /joke-by-id?id=5
 }
 ```
 
-### /search
+## /search
 
 This endpoint searches for jokes containing the specified query. If no jokes are found matching the query, an error message is returned.
 
@@ -118,7 +120,24 @@ GET /search?query=black
 ]
 ```
 
-## Contributing
+## /submit-joke
 
-We welcome contributions to the Dark Joke API! Majorly If have any dark jokes available submit it. 
-If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+You can now submit your own jokes to the API! Use this endpoint to send a joke along with your details. All jokes are reviewed before being added to the database. Go Creative!!!
+
+
+**Form Data:**
+
+- `username`: Your name.
+- `joke`: The joke you want to submit.
+- `email`: Your email address.
+
+
+## /playground
+
+The playground is a web interface to test out the API and its endpoints interactively. You can use it to explore features, make API calls, and view responses directly in a GUI. 
+
+###
+
+# Contributing
+
+We welcome contributions to the Dark Joke API! Majorly if you have any jokes available, submit them. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
